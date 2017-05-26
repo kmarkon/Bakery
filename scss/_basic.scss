@@ -1,0 +1,39 @@
+$columns: 12;
+$one-column-width:1/$columns;
+$max-container-width:1100px;
+
+*{
+  box-sizing:border-box;
+  margin: 0;
+  font-family: 'Alegreya', serif;
+}
+.grid-container{
+	width:100%;
+	max-width:$max-container-width;
+  margin: 0 auto;
+}
+// .row {
+//   margin-bottom: 10px;
+// }
+.row:before, .row:after{
+	content: " ";
+	display:table;
+	clear:both;
+}
+
+[class*='col-']{
+	padding:12px;
+	float: left;
+	min-height:1px;
+}
+
+@mixin col-x-list {
+  @for $i from 1 through $columns {
+		$wid: percentage($one-column-width * $i);
+      .col-#{$i} {
+			width: $wid;
+			}
+		}
+}
+
+@include col-x-list;
