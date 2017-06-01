@@ -20,6 +20,7 @@ header{
         height: 70px;
         color:white;
         display: flex;
+        display: -webkit-flex;
         justify-content: center;
         align-items: center;
         nav{
@@ -27,6 +28,7 @@ header{
           ul{
             width: 100%;
             display: flex;
+            display: -webkit-flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
@@ -45,6 +47,7 @@ header{
       #media{
         height: 70px;
         display: flex;
+        display: -webkit-flex;
         align-items: center;
         justify-content: flex-end;
         i{
@@ -61,8 +64,9 @@ header{
       }
       .col-8{
         // border:1px solid blue;
-        height: auto;
+        height: 100%;
         display: flex;
+        display: -webkit-flex;
         flex-direction: column;
         align-items: center;
         // justify-content: center;
@@ -90,6 +94,7 @@ header{
           background-color: rgba(86,83,76,0.5);
           border: 1px dashed white;
           display: flex;
+          display: -webkit-flex;
           align-items: center;
           justify-content: center;
           p{

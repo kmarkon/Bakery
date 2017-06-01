@@ -1,0 +1,37 @@
+.section_2{
+  background-image: url("../images/placeholder_03.jpg");
+  background-size: 100% auto;
+  height: 600px;
+  background-repeat: no-repeat;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  .col-8{
+    background-image: url("../images/wiatrak_17.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    // border:1px solid red;
+    height: 400px;
+    .col-5,.col-7{
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      justify-content: center;
+      // border:1px solid blue;
+      height: 80%;
+    }
+    .col-5{
+      #pancakes{
+        width: 250px;
+        height:250px;
+        background-image: url("../images/pancakes.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        // border: 1px solid red;
+      }
+    }
+  }
+}
