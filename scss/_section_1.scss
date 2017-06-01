@@ -1,12 +1,61 @@
 .section_1{
+  background-image: url("../images/textura.jpg");
+  padding-bottom: 4%;
   .grid-container{
-    border:1px solid blue;
+    height:auto;
     #cakes{
-      height: 300px;
-      .col-6{
-        border:1px solid red;
-        height: 100%;
+
+      #chef{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 5%;
+        // text-align: center;
+        height: 600px;
+        h3{
+          font-size: 30px;
+        }
+        .memories{
+          letter-spacing: 1px;
+          padding:2% 8% 10% 8%;
+        }
+        .gold{
+          font-size: 12px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color:rgb(198,166,100);
+          // margin-bottom: 8%;
+        }
+        .chef_cook{
+          opacity: 0.7;
+          border-radius: 5%;
+          width: 70%;
+          height: 70%;
+          background-image: url("../images/chef_cook.jpg");
+          background-size: contain;
+          background-repeat: no-repeat;
+
+        }
+      }//#chef
+    #art{
+      // border:1px solid red;
+      height: 600px;
+      margin-top: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .cakes{
+        width: 80%;
+        height: 60%;
+        background-image: url("../images/cakes.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
       }
     }
-  }
-}
+    }//#cakes
+
+  }//.grid-container
+}//section_1
